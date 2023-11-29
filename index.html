@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergei Khvalev | Full stak Developer
 </title>
+<link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <header>
-        <img src="" alt="personal logo">
-       
-            <div>
-                <a href="">My story</a>
-                <a href="">Say Hello</a>
-                <a href="">Photos</a>
-            </div>
+        <img src="" alt="personal-logo">
+        <nav class="page-nav">
+            <a href="">My story</a>
+            <a href="">Say Hello</a>
+            <a href="">Photos</a>
+        </nav>
     </header>
 
     <main>
-        <article>
-        <section>
+        <article class="content">
+        <section class="content__section slogan">
             <div>
                 <h1>Designer, fullstack Developer</h1>
             </div>
@@ -31,19 +31,19 @@
                 <img src="" alt="main photo">
             </div>
         </section>
-        <section class="intro">
+        <section class="content__section intoduction">
             <div>
                 <h2>Hi, I am Sergei. Nice to meet you.</h2>
             </div>
                 <div>
-                    <h3>Since beginning my journey as a freelance designer over 11 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one design problem at a time.</h3>
+                    <h3>Since beginning my journey as a freelance designer over 11 years ago, I've done remote <br> work for agencies, consulted for startups, and collaborated with talented people to create <br> digital products for both business and consumer use. I'm quietly confident, naturally <br>curious, and perpetually working on improving my chops one design problem at a time.</h3>
                 </div>
         </section>
-        <section class="stack-of-tools">
-            <div class="test">
+        <section class="content__section tool-stack">
+            <div class="test stack">
                 <img src="" alt="test_logo">
                 <h4>Tester</h4>
-                <h4>I value simple content structure, clean design patterns, and thoughtful interactions.</h4>
+                <h4>I value simple content structure, clean design patterns, <br>and thoughtful interactions.</h4>
                 <h4>I enjoy to test: UI part, API layer, DB connactivity</h4>
                 <h4>Testing tools</h4>
                 <ul>
@@ -56,7 +56,9 @@
                     <li>Cucumber</li>
                 </ul>
             </div>
-            <div class="Front-end_dev">
+            <div class="Front-end_dev stack">
+                <img src="" alt="front_dev_logo">
+                <h4>Front-end Developer</h4>
                  <h4>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</h4>
                 <h4>Languages I speak: JavaScript, TypeScript, Python</h4>
                 <ul>
@@ -68,7 +70,9 @@
                     <li>tailwind</li>
                 </ul>
             </div>
-            <div class="back-end_dev">
+            <div class="back-end_dev stack">
+                <img src="" alt="back_dev_logo">
+                <h4>Back-end Developer</h4>
                 <h4>I love connect things for best experience</h4>
                 <h4>DB I work with: PostgreSQL, MongoDB, Oracle</h4>
                 <ul>
@@ -80,44 +84,55 @@
                 </ul>
             </div>
         </section>
-        <section class="projects">
-            <div class="project_first">
-                 <p><img src="./images/project_1.jpg" alt="project_one_logo"></p>
+        <section class="content__section projects">
+            <div class="project first_first">
+                 <p><img src="./images/project_1.jpg" class ="project_logo" alt="crmApp_logo"></p>
                 <a href="">CRM app</a>
             </div>
-            <div class="project_second">
-                 <p><img src="./images/project_2.jpg" alt="project_two_logo"></p>
+            <div class="project project_second">
+                 <p><img src="./images/project_2.jpg" class ="project_logo" alt="bankingApp_logo"></p>
                 <a href="">Banking app</a>
             </div>
-                <div class="project_third">
-                 <p><img src="./images/project_3.jpg" alt="project_three_logo"></p>
+                <div class="project project_third">
+                 <p><img src="./images/project_3.jpg" class ="project_logo" alt="tradeApp_logo"></p>
                 <a href="">Trade app</a>
-            </div>
-              
+            </div>      
         </section>
-        <section class="collabs">
-            <div>
-                <h2>I'm proud to have collaborated with some awesome companies:</h2>
+        <section class="content__section collaborations">
+            <div class="content__section__title">
+                <h2 >I am proud to have participated in projects of such wonderful companies:</h2>
             </div>
-            <div class="wells-fargo">
-                <img src="./images/WF.png" alt="wells-fargo_logo">  
+            <div class="content__section__companies">
+                <div class="company_logo wells-fargo">
+                    <span class="company-name">Wells Fargo</span>
+                    <img src="./images/WF.png" class="firm_logo" alt="wells-fargo_logo">  
+                </div>
+                <div class="company_logo firstcare">
+                    <span class="company-name">CareFirst</span>
+                    <img src="./images/CF_logo.jpg" class="firm_logo" alt="FirstCare_logo">
+                </div>
+                <div class="company_logo surfmed">
+                    <span class="company-name">SurfMed</span>
+                    <img src="./images/SM_logo.png" class="firm_logo" alt="surfmed_logo">
+                </div>
             </div>
-            <div class="firstcare">
-                <img src="./images/CF_logo.jpg" alt="FirstCare_logo">
-            </div>
-            <div class="surfmed">
-                <img src="./images/SM_logo.png" alt="surfmed_logo">
-            </div>
+            
         </section>
         </article>
-
  </main>
-        <footer>
-            <h4>footer: info about me, contacts</h4>
-        </footer>
-       
-
+<footer class="basemant">
+    <div class="basment__info">
+         <h4 class="contact-title">My contacts:</h4>
+    </div>
+    <div class="basement_contacts">
+        <a href=""> phone </a>
+        <a href=""> Email</a>
+        <a href=""> LinkedIn </a>
+        <a href=""> Instagram </a>
+        <a href=""> telegram </a>
+    </div>
    
-    
+</footer>
+ 
 </body>
 </html>

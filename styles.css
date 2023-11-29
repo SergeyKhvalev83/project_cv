@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+body{
+    margin:15px 15px;
+}
+
+/* header styling */
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* main staling */
+
+.slogan{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.intoduction{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.tool-stack{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.stack{
+    text-align: center;
+    flex-basis: 500px
+}
+
+ul{
+    list-style-type: none;
+}
+
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap:50px
+}
+
+.project{
+    width: 500px;
+    border: 2px solid black;
+    border-radius: 8px;
+    text-align: center;
+}
+
+img[class="project_logo"]{
+    width: 100%;
+    height: 100%;
+}
+
+.content__section__title{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.content__section__companies{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    text-align: center;
+}
+
+.company_logo{
+    flex-basis: 400px;
+}
+
+.firm_logo{
+    width: 100%;
+    height: 100%;
+}
+
+
+.company-name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* footer */
+footer{
+    padding-top: 100px;
+   
+}
+
+.basment__info{
+     border-top: 2px solid black;
+     
+}
+
+.contact-title{
+    margin: 10px;
+}
+
+.basement_contacts{
+    display: flex;
+    gap:25px;
+    justify-content: space-around;
+}
+
