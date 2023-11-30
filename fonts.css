@@ -1,0 +1,9 @@
+@font-face {
+  font-family: poppies;
+  src: url(./fonts/poppies/Poppins-Bold.ttf);
+}
+
+@font-face {
+  font-family: inconsolata;
+  src: url(./fonts/inconsolata/Inconsolata-VariableFont_wdth\,wght.ttf);
+}
