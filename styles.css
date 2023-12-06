@@ -4,18 +4,20 @@
 }
 
 body {
-  margin: 15px 15px;
+  margin: 10px 50px;
+  background-color: gray;
 }
 
 /* header styling */
 header {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .page-nav {
   display: flex;
   gap: 35px;
+  margin-bottom: 35px;
 }
 
 a.page-nav__link {
@@ -24,10 +26,11 @@ a.page-nav__link {
   border: 2px solid black;
   padding: 10px 20px;
   border-radius: 20px;
+  align-self: flex-end;
 }
 
 a.page-nav__link:hover {
-  background-color: #6E07F3;
+  background-color: #6e07f3;
   color: white;
   border: none;
 }
@@ -40,6 +43,82 @@ h1 {
 
 .slogan-photo > div > h2 {
   font-weight: 100;
+}
+
+/* personal logo  */
+
+.logo_container {
+  text-align: center;
+  height: 150px;
+  width: 200px;
+  margin: -15px;
+  margin-bottom: 0px;
+  padding: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+    to bottom left,
+    rgb(31, 30, 30) 20%,
+    rgb(39, 37, 37) 30%,
+    rgb(81, 75, 75) 50%,
+    /* rgb(120, 108, 108) 80% */
+  );
+  -webkit-background-clip: background;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: backGroundShining 2s ease-in-out infinite alternate;
+}
+
+.text_letters {
+  gap: 10px;
+  font-weight: 900;
+  font-size: 6rem;
+  background: linear-gradient(
+    to right,
+    rgb(99, 85, 4) 20%,
+    rgb(153, 131, 6) 30%,
+    rgb(209, 180, 14) 70%,
+    rgb(221, 199, 74) 80%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+  animation: textShining 2s ease-in-out infinite alternate;
+}
+span {
+  display: block;
+  font-size: 1.8rem;
+  margin-top: -20px;
+}
+
+.text_letters:hover {
+  background: linear-gradient(to right, rgb(156, 8, 156), rgb(32, 158, 32));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 500% auto;
+}
+
+@keyframes textShining {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes backGroundShining {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 /* main styling */
@@ -63,32 +142,45 @@ img[alt="main photo"] {
   justify-content: center;
   text-align: center;
   height: 500px;
-  background-color: #6E07F3;
+  background-color: #6e07f3;
   color: white;
+  margin-top: -3.5px;
 }
 
-.intoduction > div >h2{
-    font-family: poppies;
-    font-size: 2.5rem;
-    margin-bottom: 0px;
+.intoduction > div > h2 {
+  font-family: poppies;
+  font-size: 2.5rem;
+  margin-bottom: 0px;
 }
 
-.text{
-    font-size: 1.8rem;
-    line-height: 1.8rem;
-    font-family: inconsolata;
+.text {
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  font-family: inconsolata;
 }
 
-.tool-stack {
+.tool-stacks {
+  position: relative;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 15px;
+  width: 80%;
+  top: -100px;
+  left: 10%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 50px;
 }
 
 .stack {
   text-align: center;
   flex-basis: 500px;
+}
 
+.stack > img {
+  height: 100px;
+  width: 100px;
 }
 
 ul {
@@ -104,6 +196,7 @@ ul {
 
 .project {
   width: 500px;
+  height: 500px;
   border: 2px solid black;
   border-radius: 8px;
   text-align: center;
@@ -122,22 +215,47 @@ img[class="project_logo"] {
 .content__section__companies {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 50px;
   text-align: center;
 }
 
 .company_logo {
-  flex-basis: 400px;
+  width: 500px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
 }
 
 .firm_logo {
   width: 100%;
-  height: 100%;
+  height: 98%;
 }
 
 .company-name {
   font-size: 1.5rem;
   font-weight: bold;
+}
+
+/* own practice projects */
+
+aside {
+  margin-top: 100px;
+}
+aside > h2 {
+  text-align: center;
+}
+
+.own-projects {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.clone {
+  border: 1px solid black;
+  height: 500px;
+  width: 500px;
 }
 
 /* footer */
@@ -157,4 +275,18 @@ footer {
   display: flex;
   gap: 25px;
   justify-content: space-around;
+}
+
+.own-practice {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.clone {
+  width: 500px;
+  border: 2px solid black;
+  border-radius: 8px;
+  text-align: center;
 }
