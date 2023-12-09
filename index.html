@@ -6,6 +6,8 @@
     <title>Sergei Khvalev | Full stak Developer</title>
     <link rel="stylesheet" href="./styles.css" />
     <link rel="stylesheet" href="./fonts.css" />
+
+   <script defer src="./script.js"></script>
   </head>
   <body>
     <header>
@@ -16,15 +18,22 @@
           </div>
         </div>
       </div>
-      <!-- <img src="" alt="personal-logo" /> -->
-      <nav class="page-nav">
-        <a class="page-nav__link" href="">My Story</a>
-        <a class="page-nav__link" href="">My Photos</a>
-        <a class="page-nav__link" href="">Say Hello</a>
+      <nav id="mobile-menu">
+        <div class="menu-toggle" >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">My Story</a></li>
+          <li><a href="#">My Photos</a></li>
+          <li><a href="#">Say Hello</a></li>
+        </ul>
+      </nav>
       </nav>
     </header>
 
-    <main>
+    <main >
       <article class="content">
         <section class="content__section slogan-photo">
           <div>
@@ -226,4 +235,7 @@
       </div>
     </footer>
   </body>
+
+ 
+
 </html>

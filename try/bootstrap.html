@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Responsive Hamburger Menu</title>
+    <link rel="stylesheet" href="./styles_boot.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Your Logo</div>
+      <nav>
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <script>
+      document
+        .getElementById("mobile-menu")
+        .addEventListener("click", function () {
+          var navList = document.querySelector(".nav-list");
+          navList.classList.toggle("show");
+        });
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
